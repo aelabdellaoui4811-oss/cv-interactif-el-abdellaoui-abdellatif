@@ -1,0 +1,73 @@
+body { font-family: Arial, sans-serif; }
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-panel {
+    background: #1f2937;
+    color: white;
+    padding: 40px 30px;
+        width: 35%;
+    }
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    display: block;
+    margin: 0 auto 25px auto;
+}
+
+.section-title { font-weight: bold; margin-top: 30px; margin-bottom: 10px; font-size: 20px; }
+
+.right-panel { padding: 40px; width: 65%;}
+
+.cv-title { font-size: 28px; font-weight: bold; }
+
+.subtext { font-size: 18px; color: #9ca3af; }
+
+ul { padding-left: 20px; }
+
+/* Modules interactifs */
+.module-section-title {
+    cursor: pointer;
+    color: #0d6efd;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.module-title {
+    cursor: pointer;
+    color: #0d6efd;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.module-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-left: 3px solid #0d6efd;
+    border-radius: 4px;
+}
+
+.module-detail.show {
+    padding: 10px 15px;
+    max-height: 500px;
+}
+
+#modulesSection {
+    display: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
