@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Interactif</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-md-4 left-panel">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="profile-img" alt="Profile">
+            <div class="cv-title text-center">El Abdellaoui Abdellatif</div>
+            <div class="subtext text-center">étudiant universitaire</div>
+
+            <div class="section-title">CONTACT</div>
+            <p>📞 +212 714392377<br>✉ a.elabdellaoui4811@uca.ac.ma<br>📍 Marrakech</p>
+
+            <div class="section-title">COMPÉTENCES</div>
+            <ul>
+                <li>Linux/Unix Command Line</li>
+                <li>CSS</li>
+                <li>HTML<i>
+                <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="section-title">LANGAGES</div>
+            <ul>
+                <li>Arabe: Habile</li>
+                <li>Français: Moyen</li>
+                <li>Anglais: Moyen</li>
+            </ul>
+
+            <div class="section-title">LOISIRS</div>
+            <ul>
+                <li>Écriture</li>
+                <li>Lecture</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-8 right-panel">
+
+            <div class="section-title">PROFIL</div>
+            <p>Je suis étudiant en informatique avec une formation solide dans différents domaines de la programmation et des technologies de l’informatique. Je suis motivé, curieux et capable de résoudre des problèmes de manière analytique. J’apprécie le travail en équipe et la collaboration avec mes camarades pour réaliser des projets informatiques.</p>
+
+            <div class="section-title">EXPÉRIENCE</div>
+
+            <b>Projets universitaires en développement logiciel</b>
+            <ul>
+                <li>Développement de programmes et petits projets en langage C et en algorithmique.</li>
+                <li>Collaboration avec d’autres étudiants pour concevoir et tester des solutions informatiques.</li>
+            </ul>
+
+            <b>Développement Web (projets académiques)</b>
+            <ul>
+                <li>Réalisation de sites web simples en utilisant HTML, CSS et JavaScript dans le cadre de travaux pratiques.</li>
+                <li>Conception d’interfaces utilisateur basiques et mise en œuvre de fonctionnalités interactives.</li>
+            </ul>
+
+            <div class="section-title">FORMATION</div>
+          <p>- Études en informatique et algorithmes<br>- Études générales en informatique, incluant la programmation, les algorithmes et les concepts fondamentaux du développement logiciel.<br>- Réalisation de projets académiques pour l'application pratique des concepts théoriques acquis par l'étudiant et les étudiants.
+</p> 
+            <!-- Modules interactifs -->
+            <div class="module-section-title" onclick="toggleSection('modulesSection')">Modules étudiés</div>
+            <div id="modulesSection">
+                <div class="module-title" onclick="toggleModule(this)">Mathématiques</div>
+                <div class="module-detail">
+                    Algèbre, Analyse, Probabilités et Statistiques
+                </div>
+
+                <div class="module-title" onclick="toggleModule(this)">Physique</div>
+                <div class="module-detail">
+                    Traitement du signal, Électronique numérique
+                </div>
+
+                <div class="module-title" onclick="toggleModule(this)">Informatique</div>
+                <div class="module-detail">
+                    Programmation C, javaScript, HTML, CSS
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
